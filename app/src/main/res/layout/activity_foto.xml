@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/fondo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnSiguientefoto"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/myrect"
+        android:elevation="6dp"
+        android:enabled="false"
+        android:fontFamily="sans-serif-black"
+        android:text="Siguiente"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <Button
+        android:id="@+id/btnGaleria"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/myrect"
+        android:elevation="6dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Galería"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSiguientefoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.884" />
+
+    <Button
+        android:id="@+id/btnCamara"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/myrect"
+        android:elevation="6dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Cámara"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSiguientefoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.764" />
+
+    <ImageView
+        android:id="@+id/ivFoto"
+        android:layout_width="307dp"
+        android:layout_height="262dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.426"
+        app:srcCompat="@drawable/ic_camera_green" />
+
+    <TextView
+        android:id="@+id/tvFoto"
+        android:layout_width="223dp"
+        android:layout_height="56dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center_horizontal"
+        android:text="¡Menuda pinta!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSiguientefoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.198" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="99dp"
+        android:layout_height="106dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011"
+        app:srcCompat="@drawable/obentorg" />
+</androidx.constraintlayout.widget.ConstraintLayout>

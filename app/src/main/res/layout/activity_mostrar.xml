@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ViewFlipper
+        android:id="@+id/ifFotos"
+        android:layout_width="268dp"
+        android:layout_height="255dp"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"></ViewFlipper>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etNombreReceta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:hint="Nombre Receta"
+                android:textAlignment="center"
+                android:textColor="@color/olivebright"
+                android:textColorHint="@color/olivebright"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etDificultadReceta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:hint="Dificultad Receta"
+                android:textAlignment="center"
+                android:textColor="@color/olivebright"
+                android:textColorHint="@color/olivebright"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvIngredientesReceta"
+                android:layout_width="match_parent"
+                android:layout_height="241dp" />
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etmPreparacionReceta"
+                    android:layout_width="match_parent"
+                    android:layout_height="176dp"
+                    android:layout_marginRight="10dp"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center_horizontal"
+                    android:hint="Preparación"
+                    android:inputType="textMultiLine"
+                    android:textAlignment="center"
+                    android:textColor="@color/olivebright"
+                    android:textColorHint="@color/olivebright"
+                    android:textSize="20sp"
+                    tools:ignore="RtlCompat" />
+            </ScrollView>
+
+            <EditText
+                android:id="@+id/etTiempoReceta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:inputType="textMultiLine"
+                android:text="Tiempo"
+                android:textAlignment="center"
+                android:textColor="@color/olivebright"
+                android:textColorHint="@color/olivebright"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etTemperaturaReceta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:inputType="textMultiLine"
+                android:text="Temperatura"
+                android:textAlignment="center"
+                android:textColor="@color/olivebright"
+                android:textColorHint="@color/olivebright"
+                android:textSize="20sp" />
+            <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etmComentarioReceta"
+                    android:layout_width="match_parent"
+                    android:layout_height="176dp"
+                    android:layout_marginRight="10dp"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:clickable="true"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center_horizontal"
+                    android:hint="Comentario"
+                    android:inputType="textMultiLine"
+                    android:textAlignment="center"
+                    android:textColor="@color/olivebright"
+                    android:textColorHint="@color/olivebright"
+                    android:textSize="20sp"
+                    tools:ignore="RtlCompat"/>
+            </ScrollView>
+
+            <EditText
+                android:id="@+id/etFechaReceta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:ems="10"
+                android:focusable="false"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:hint="Fecha"
+                android:inputType="date"
+                android:textAlignment="center"
+                android:textColor="@color/olivebright"
+                android:textColorHint="@color/olivebright"
+                android:textSize="20sp" />
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btnComentario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="73dp"
+                    android:background="@drawable/myrect"
+                    android:elevation="6dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Comentario"
+                    android:textSize="19sp" />
+
+                <ImageButton
+                    android:id="@+id/ibFoto"
+                    android:layout_width="93dp"
+                    android:layout_height="72dp"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:background="@color/softOrange"
+                    android:elevation="6dp"
+                    app:srcCompat="@drawable/ic_camera_green" />
+
+                <Button
+                    android:id="@+id/btnModificar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="73dp"
+                    android:layout_row="0"
+                    android:layout_column="2"
+                    android:background="@drawable/myrect"
+                    android:elevation="6dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Modificar"
+                    android:textSize="19sp" />
+            </GridLayout>
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btnGuardarMostrar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:background="@drawable/myrect"
+                    android:elevation="6dp"
+                    android:enabled="false"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Guardar Cambios"
+                    android:textSize="19sp" />
+
+                <Button
+                    android:id="@+id/btnSalirMostrar"
+                    android:layout_width="171dp"
+                    android:layout_height="match_parent"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:background="@drawable/myrect"
+                    android:elevation="6dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Salir"
+                    android:textSize="19sp" />
+            </GridLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
